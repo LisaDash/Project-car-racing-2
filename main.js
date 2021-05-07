@@ -118,7 +118,7 @@ function car1_down()
 
 function car1_right()
 {
-    if(car1_x <= 800)
+    if(car1_x <= 700)
     {
         car1_x += 10;
         console.log("When right arrow key is pressed, X = "+ car1_x +", Y = " +car1_y);
@@ -166,7 +166,7 @@ function car2_down()
 
 function car2_right()
 {
-    if(car2_x <= 800)
+    if(car2_x <= 700)
     {
         car2_x += 10;
         console.log("When d is pressed, X = "+ car2_x +", Y = " +car2_y);
@@ -186,6 +186,14 @@ function car2_left()
         uploadcar1();
         uploadcar2();
     }
+
+    if(car1_x > 700)
+    {
+        console.log("car1 Won");
+        document.getElementById("game_status").innerHTML = "Car1 Won !!"
+    }
 }
+
+
 
 
