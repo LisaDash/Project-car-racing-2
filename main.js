@@ -174,6 +174,17 @@ function car2_right()
         uploadcar1();
         uploadcar2();
     }
+
+    if(car1_x > car2_x && car1_x >= 700)
+    {
+        console.log("car1 Won");
+        document.getElementById('game_status').innerHTML = "Car1 Won !!";
+    }
+    else if(car2_x > car1_x && car2_x >= 700)
+    {
+        console.log("car2 Won");
+        document.getElementById('game_status').innerHTML = "Car2 Won !!";
+    }
 }
 
 function car2_left()
@@ -186,12 +197,8 @@ function car2_left()
         uploadcar1();
         uploadcar2();
     }
-
-    if(car1_x > 700)
-    {
-        console.log("car1 Won");
-        document.getElementById("game_status").innerHTML = "Car1 Won !!"
-    }
+    
+    
 }
 
 
